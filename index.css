@@ -139,7 +139,6 @@ div[class^="layout"] {
 }
 .drag-element.drag-element-in-drop-zone {
   background-color: #ffb55e;
-  cursor: crosshair;
 }
 
 .drag-taken-element {

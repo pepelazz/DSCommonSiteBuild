@@ -7,7 +7,44 @@ require('./drag-and-drop/ng-drag-and-drop');
 
 
 
-},{"./drag-and-drop/ng-drag-and-drop":"/Users/Trikster/static_sites/DSCommon/_DSCommonSite/src/javascript/drag-and-drop/ng-drag-and-drop.coffee","./ng-app":"/Users/Trikster/static_sites/DSCommon/_DSCommonSite/src/javascript/ng-app.coffee","./util":"/Users/Trikster/static_sites/DSCommon/_DSCommonSite/src/javascript/util.coffee"}],"/Users/Trikster/static_sites/DSCommon/_DSCommonSite/src/javascript/drag-and-drop/ng-drag-and-drop.coffee":[function(require,module,exports){
+},{"./drag-and-drop/ng-drag-and-drop":"/Users/Trikster/static_sites/DSCommonSite/_DSCommonSite/src/javascript/drag-and-drop/ng-drag-and-drop.coffee","./ng-app":"/Users/Trikster/static_sites/DSCommonSite/_DSCommonSite/src/javascript/ng-app.coffee","./util":"/Users/Trikster/static_sites/DSCommonSite/_DSCommonSite/src/javascript/util.coffee"}],"/Users/Trikster/static_sites/DSCommonSite/_DSCommonSite/src/javascript/drag-and-drop/check-cursor-on-element.coffee":[function(require,module,exports){
+var overlaps;
+
+overlaps = (function() {
+  var compareX, compareY, getPositions;
+  getPositions = function(elem) {
+    var height, pos, width;
+    pos = $(elem).offset();
+    width = $(elem).width();
+    height = $(elem).height();
+    return [[pos.left, pos.left + width], [pos.top, pos.top + height]];
+  };
+  compareX = function(x, elPos) {
+    if (x < elPos[0][0] || x > elPos[0][1]) {
+      return false;
+    } else {
+      return true;
+    }
+  };
+  compareY = function(y, elPos) {
+    if (y < elPos[1][0] || y > elPos[1][1]) {
+      return false;
+    } else {
+      return true;
+    }
+  };
+  return function(coord, el) {
+    var elPos;
+    elPos = getPositions(el);
+    return compareX(coord[0], elPos) && compareY(coord[1], elPos);
+  };
+})();
+
+module.exports = overlaps;
+
+
+
+},{}],"/Users/Trikster/static_sites/DSCommonSite/_DSCommonSite/src/javascript/drag-and-drop/ng-drag-and-drop.coffee":[function(require,module,exports){
 var module, overlaps;
 
 overlaps = require('./overlaps');
@@ -51,11 +88,15 @@ module.directive('draggableItem', [
           $(document).on('mousemove', (function(e) {
             moveAt(e);
           }));
-          $(document).on('mouseup', (function() {
+          $(document).on('mouseup', (function(e) {
+            var obj;
             $(cloneEl).remove();
             $(document).off('mousemove');
-            $(element).off('mouseup');
+            $(document).off('mouseup');
             $(element).removeClass('drag-taken-element');
+            obj = $scope.$eval(attrs.draggableItem);
+            obj.coord = [e.pageX, e.pageY];
+            $rootScope.arrayChange(obj);
           }));
           return moveAt(e);
         });
@@ -66,7 +107,7 @@ module.directive('draggableItem', [
 
 
 
-},{"./overlaps":"/Users/Trikster/static_sites/DSCommon/_DSCommonSite/src/javascript/drag-and-drop/overlaps.coffee"}],"/Users/Trikster/static_sites/DSCommon/_DSCommonSite/src/javascript/drag-and-drop/overlaps.coffee":[function(require,module,exports){
+},{"./overlaps":"/Users/Trikster/static_sites/DSCommonSite/_DSCommonSite/src/javascript/drag-and-drop/overlaps.coffee"}],"/Users/Trikster/static_sites/DSCommonSite/_DSCommonSite/src/javascript/drag-and-drop/overlaps.coffee":[function(require,module,exports){
 var overlaps;
 
 overlaps = (function() {
@@ -96,8 +137,10 @@ module.exports = overlaps;
 
 
 
-},{}],"/Users/Trikster/static_sites/DSCommon/_DSCommonSite/src/javascript/ng-app.coffee":[function(require,module,exports){
-var module;
+},{}],"/Users/Trikster/static_sites/DSCommonSite/_DSCommonSite/src/javascript/ng-app.coffee":[function(require,module,exports){
+var cursorOnElement, module;
+
+cursorOnElement = require('./drag-and-drop/check-cursor-on-element');
 
 module = angular.module('app', ['dragAndDrop']);
 
@@ -116,12 +159,29 @@ module.controller('main', [
       arr1.push(obj1);
       arr2.push(obj2);
     }
+    $rootScope.arrayChange = (function(obj) {
+      $('.drop-zone').each(function(i) {
+        if (cursorOnElement(obj.coord, $('.drop-zone')[i])) {
+          if (obj.array === 'arr1' && i !== 0) {
+            arr2.push(arr1[obj.index]);
+            arr1.splice(obj.index, 1);
+          }
+          if (obj.array === 'arr2' && i !== 1) {
+            arr1.push(arr2[obj.index]);
+            arr2.splice(obj.index, 1);
+          }
+          return $timeout(function() {
+            return $scope.$apply();
+          });
+        }
+      });
+    });
   })
 ]);
 
 
 
-},{}],"/Users/Trikster/static_sites/DSCommon/_DSCommonSite/src/javascript/util.coffee":[function(require,module,exports){
+},{"./drag-and-drop/check-cursor-on-element":"/Users/Trikster/static_sites/DSCommonSite/_DSCommonSite/src/javascript/drag-and-drop/check-cursor-on-element.coffee"}],"/Users/Trikster/static_sites/DSCommonSite/_DSCommonSite/src/javascript/util.coffee":[function(require,module,exports){
 var fixSize;
 
 $(function() {
