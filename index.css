@@ -1,0 +1,150 @@
+h1 {
+  font-size: 4.25rem;
+  line-height: 4.5rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0rem;
+}
+
+h2 {
+  font-size: 2.625rem;
+  line-height: 3.375rem;
+  margin-top: 2.25rem;
+  margin-bottom: 1.125rem;
+}
+
+h3 {
+  font-size: 1.625rem;
+  line-height: 2.25rem;
+  margin-top: 1.125rem;
+  margin-bottom: 1.125rem;
+}
+
+#hideAll {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: white;
+  z-index: 10000;
+}
+#hideAll .loader {
+  width: 6rem;
+  margin: 0.5rem auto 0;
+}
+#hideAll .loader > div {
+  width: 2rem;
+  height: 2rem;
+  background-color: #0dcecb;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  /* Prevent first frame from flickering when animation starts */
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+#hideAll .loader .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+#hideAll .loader .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+
+  40% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+html, body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #def1f4;
+  font-size: 1.25rem;
+  line-height: 1.59;
+}
+
+html {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 100%;
+}
+@media (max-width: 1240px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+div[class^="layout"] {
+  width: 49.15254%;
+  float: left;
+}
+
+.arr li, .drag-element {
+  width: 5rem;
+  margin: 0.3rem auto;
+  padding: 0.2rem 0.5rem;
+  font-size: 1.61803rem;
+  line-height: 1.2;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.arr {
+  list-style: none;
+  padding: 1rem;
+  background-color: gainsboro;
+  width: 20%;
+  margin: 3rem auto;
+  border-radius: 5px;
+}
+
+.arr1 li {
+  background-color: gold;
+}
+
+.arr2 li {
+  background-color: burlywood;
+}
+
+.drag-element {
+  position: absolute;
+  background-color: bisque;
+  opacity: 0.8;
+}
+.drag-element.drag-element-in-drop-zone {
+  background-color: #ffb55e;
+  cursor: crosshair;
+}
+
+.drag-taken-element {
+  opacity: 0.3;
+  color: transparent;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguY3NzIiwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZXMiOlsiaW5kZXguc2FzcyJdLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IFwiY29tcGFzcy9jc3MzL3RyYW5zaXRpb25cIlxuXG5AaW1wb3J0IFwic3VzeVwiXG5AaW1wb3J0IFwiYnJlYWtwb2ludFwiXG5AaW1wb3J0IFwibW9kdWxhci1zY2FsZVwiXG5cbi8vLS0tIFZhcmlhYmxlc1xuLy9tZWRpYVxuJGJyZWFrLXBob25lOiAgIDYwMHB4XG4kYnJlYWstc21hbGw6ICAgNzY4cHhcbiRicmVhay1tZWRpdW06ICA5OTJweFxuJGJyZWFrLTExNTA6ICAgIDExNTBweFxuJGJyZWFrLWxhcmdlOiAgMTI0MHB4XG5cbi8vY29sb3JzXG4kY29sb3ItYmc6ICNERUYxRjRcbiRjb2xvci1ncmVlbjogIzhCQkYwMFxuJGNvbG9yLWJsdWU6ICMwMDczQUVcblxuXG4vL3NpemVzXG5cbiR3aWRlLWJvcmRlcjogNSVcblxuLy8tLS0gTWl4aW5zXG5cblxuXG5AbWl4aW4gYnRuKCRiZy1jb2xvciwkY29sb3IpXG4gIGJvcmRlcjogMXB4IHNvbGlkICMwMDAwMDBcbiAgcGFkZGluZzogNXB4IDEycHggNXB4IDEwcHhcbiAgYmFja2dyb3VuZDogJGJnLWNvbG9yXG4gIGNvbG9yOiAkY29sb3JcbiAgaVxuICAgIGZvbnQtc2l6ZTogMTVweFxuICAgIG1hcmdpbi1yaWdodDogNHB4XG4gICY6aG92ZXJcbiAgICBiYWNrZ3JvdW5kOiBkYXJrZW4oJGJnLWNvbG9yLCAxMCUpXG4gICAgY29sb3I6IGxpZ2h0ZW4oJGNvbG9yLCAzMCUpXG5cbkBtaXhpbiBob3Jpem9udGFsLWxpc3QoJG1hcmdpbi1yaWdodClcbiAgbGlzdC1zdHlsZS10eXBlOiBub25lXG4gIG1hcmdpbjogMFxuICBsaVxuICAgIGZsb2F0OiBsZWZ0XG4gICAgbWFyZ2luLXJpZ2h0OiAkbWFyZ2luLXJpZ2h0XG5cblxuQGltcG9ydCBcImxpYi9yZXNwb25zaXZlXCJcbkBpbXBvcnQgXCJwYXJ0aWFscy9taXhpbnNcIlxuQGltcG9ydCBcInBhcnRpYWxzL2ZvbnRzXCJcbkBpbXBvcnQgXCJwYXJ0aWFscy9sb2FkZXJcIlxuQGltcG9ydCBcInBhcnRpYWxzL3N0eWxlXCIiXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0= */
