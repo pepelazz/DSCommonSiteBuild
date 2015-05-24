@@ -142,7 +142,7 @@ var cursorOnElement, module;
 
 cursorOnElement = require('./drag-and-drop/check-cursor-on-element');
 
-module = angular.module('app', ['dragAndDrop']);
+module = angular.module('app', ['dragAndDrop', 'uiSlider']);
 
 module.controller('main', [
   '$rootScope', '$scope', '$http', '$location', '$timeout', '$log', (function($rootScope, $scope, $http, $location, $timeout, $log) {
