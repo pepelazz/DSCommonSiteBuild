@@ -36,25 +36,16 @@
 	Return
 		number
 */
-/* line 1, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
-.logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1000; }
-  /* line 6, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
-  .logo img {
-    height: 80px; }
+/* line 16, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+html body {
+  font-family: 'Open Sans', sans-serif; }
 
-/* line 9, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
-.main-content {
-  padding: 0 5%; }
+/* line 19, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+.link-no-decor {
+  text-decoration: none;
+  color: inherit; }
 
-/* line 12, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
-.page-title {
-  text-align: center; }
-
-/* line 16, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
+/* line 23, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
 .btn {
   line-height: 1;
   background: white;
@@ -65,255 +56,354 @@
   margin-top: 2rem;
   text-decoration: none;
   color: black; }
-  /* line 26, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
+  /* line 33, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
   .btn:hover {
     background: #CCCCCC; }
-  /* line 29, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
+  /* line 36, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
   .btn:disabled:hover {
     background: white; }
 
-/* line 32, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
+/* line 39, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
 .col-3 {
   width: 23.72881%;
   float: left;
   margin-right: 1.69492%; }
 
-/* line 34, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
+/* line 41, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
 .col-4 {
   width: 32.20339%;
   float: left;
   margin-right: 1.69492%; }
 
-/* line 36, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
+/* line 43, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
 .col-5 {
   width: 40.67797%;
   float: left;
   margin-right: 1.69492%; }
 
-/* line 38, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
+/* line 45, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
 .col-6 {
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%; }
 
-/* line 42, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
-#first-screen {
+/* line 51, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+header {
   position: fixed;
+  z-index: 10000;
   top: 0;
-  bottom: 0;
-  width: 100%;
-  background: url("http://www.pennenergy.com/content/dam/Pennenergy/online-articles/2015/June/Shale%20rig.JPG") no-repeat center center fixed;
-  background-size: cover; }
-  /* line 52, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
-  #first-screen .btn-group {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -330px; }
-  /* line 57, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
-  #first-screen .btn {
-    background: rgba(255, 255, 255, 0.6);
-    width: 200px;
-    line-height: 2;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  background-color: #3D84A8;
+  color: white;
+  padding: 0 1.5%;
+  font-size: 0.9rem; }
+  /* line 62, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+  header .logo {
+    float: left;
+    height: 4rem; }
+    /* line 65, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+    header .logo img {
+      width: 40.67797%;
+      float: left;
+      margin-right: 1.69492%; }
+    /* line 67, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+    header .logo .header-title {
+      width: 49.15254%;
+      float: left;
+      margin-right: 1.69492%;
+      padding-top: 0.6rem;
+      padding-left: 1rem; }
+  /* line 71, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+  header .nav, header .user-profile, header .score {
+    float: right; }
+  /* line 73, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+  header .nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 4rem;
+    margin-right: 2rem; }
+    /* line 79, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+    header .nav li {
+      float: left;
+      margin-right: 2rem; }
+  /* line 82, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+  header .user-profile {
+    height: 3rem;
+    border-radius: 4rem;
+    border: 2px solid white;
+    overflow: hidden;
+    margin-right: 2rem;
+    margin-top: 0.4rem; }
+    /* line 89, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+    header .user-profile img {
+      height: 100%;
+      width: auto; }
+  /* line 92, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+  header .score {
+    padding-top: 0.6rem; }
+
+/* line 95, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+.main-module-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 7rem;
+  width: 40.67797%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-left: 33.89831%; }
+  /* line 102, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+  .main-module-nav li {
+    position: relative;
+    box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #F5D096;
     text-align: center;
-    border: 1px solid black; }
-    /* line 63, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
-    #first-screen .btn:hover {
-      background: white; }
-  /* line 65, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
-  #first-screen .right-btn {
-    margin-left: 200px; }
-
-/* line 69, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
-#industry-chain svg {
-  display: block;
-  margin: 50px auto; }
-  /* line 72, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
-  #industry-chain svg #Production, #industry-chain svg #Drilling {
+    font-size: 1.5rem;
     cursor: pointer; }
-    /* line 74, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
-    #industry-chain svg #Production:hover, #industry-chain svg #Drilling:hover {
+    /* line 111, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+    .main-module-nav li:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
+      background-color: #f1bb67; }
+    /* line 114, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+    .main-module-nav li a {
+      text-decoration: none;
+      color: inherit; }
+    /* line 117, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+    .main-module-nav li label {
+      position: absolute;
+      top: -0.5rem;
+      right: -0.5rem;
+      background: #3D84A8;
+      color: #ffffff;
+      border-radius: 10rem;
+      font-size: 1rem;
+      padding: 0.3rem 0.75rem; }
+
+/* line 128, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+.main-content {
+  margin-top: 6rem;
+  padding: 0 1.5%; }
+  /* line 131, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+  .main-content .breadcrumbs {
+    font-size: 0.8rem; }
+    /* line 133, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+    .main-content .breadcrumbs a:hover {
       opacity: 0.5; }
+    /* line 135, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+    .main-content .breadcrumbs .divider {
+      padding: 0 0.5rem; }
+  /* line 137, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+  .main-content .level {
+    overflow: hidden;
+    margin-bottom: 2rem; }
+    /* line 140, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+    .main-content .level .level-title {
+      font-size: 2rem;
+      opacity: 0.5; }
+    /* line 143, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+    .main-content .level .level-task-list {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      /* line 148, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+      .main-content .level .level-task-list li {
+        padding: 0;
+        margin: 0;
+        width: 32.20339%;
+        float: left; }
+        /* line 152, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+        .main-content .level .level-task-list li .wrapper {
+          padding: 0 2rem 2rem 0; }
+          /* line 155, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+          .main-content .level .level-task-list li .wrapper:hover img {
+            -webkit-filter: sepia(0.3);
+                    filter: sepia(0.3); }
+          /* line 157, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+          .main-content .level .level-task-list li .wrapper img {
+            width: 100%; }
+          /* line 159, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+          .main-content .level .level-task-list li .wrapper .task-title {
+            font-size: 1.2rem;
+            font-weight: bold; }
+          /* line 162, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+          .main-content .level .level-task-list li .wrapper .task-score {
+            font-size: 1.2rem;
+            opacity: 0.5; }
 
-/* line 77, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
-.temp-functional-list {
-  margin-top: 20px; }
-  /* line 79, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
-  .temp-functional-list li {
-    margin-bottom: 10px; }
-  /* line 81, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/partials/_style.sass */
-  .temp-functional-list .btn {
-    margin-right: 10px; }
-
-/* line 1, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 1, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
 
-/* line 4, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 4, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 audio, canvas, video {
   display: inline-block; }
 
-/* line 7, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 7, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 audio:not([controls]) {
   display: none;
   height: 0; }
 
-/* line 11, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 11, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 [hidden] {
   display: none; }
 
-/* line 14, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 14, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
-/* line 19, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 19, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 body {
   margin: 0; }
 
-/* line 22, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 22, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 a:focus {
   outline: none; }
 
-/* line 25, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 25, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 a:active, a:hover {
   outline: none; }
 
-/* line 29, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 29, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 :focus {
   outline: none; }
 
-/* line 32, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 32, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
-/* line 36, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 36, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 abbr[title] {
   border-bottom: 1px dotted; }
 
-/* line 39, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 39, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 b, strong {
   font-weight: bold; }
 
-/* line 42, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 42, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 dfn {
   font-style: italic; }
 
-/* line 45, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 45, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 hr {
   box-sizing: content-box;
   height: 0; }
 
-/* line 50, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 50, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 mark {
   background: #ff0;
   color: #000; }
 
-/* line 54, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 54, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 code, kbd, pre, samp {
   font-family: monospace, serif;
   font-size: 1em; }
 
-/* line 58, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 58, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 pre {
   white-space: pre-wrap; }
 
-/* line 61, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 61, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019"; }
 
-/* line 64, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 64, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 small {
   font-size: 80%; }
 
-/* line 67, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 67, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline; }
 
-/* line 73, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 73, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 sup {
   top: -0.5em; }
 
-/* line 76, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 76, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 sub {
   bottom: -0.25em; }
 
-/* line 79, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 79, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 img {
   border: 0; }
 
-/* line 82, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 82, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 svg:not(:root) {
   overflow: hidden; }
 
-/* line 85, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 85, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 figure {
   margin: 0; }
 
-/* line 88, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 88, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
-/* line 93, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 93, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 legend {
   border: 0;
   padding: 0; }
 
-/* line 97, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 97, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 button, input, select, textarea {
   font-family: inherit;
   font-size: 100%;
   margin: 0; }
 
-/* line 102, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 102, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 button, input {
   line-height: normal; }
 
-/* line 105, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 105, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 button, select {
   text-transform: none; }
 
-/* line 108, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 108, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer; }
 
-/* line 112, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 112, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 button[disabled], html input[disabled] {
   cursor: default; }
 
-/* line 115, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 115, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0; }
 
-/* line 119, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 119, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 input[type="search"] {
   -webkit-appearance: textfield;
   box-sizing: content-box; }
 
-/* line 125, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 125, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
-/* line 128, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 128, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/* line 132, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 132, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 textarea {
   overflow: auto;
   vertical-align: top; }
 
-/* line 136, /Users/Trikster/static_sites/ProjectEngeenring/src/sass/vendor/_normalize.sass */
+/* line 136, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
