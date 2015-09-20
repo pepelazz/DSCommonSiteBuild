@@ -223,7 +223,7 @@ header {
 /* line 161, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
 .main-content {
   margin-top: 6rem;
-  padding: 0 1.5%; }
+  padding: 0 1.5% 10rem 1.5%; }
   /* line 164, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
   .main-content .breadcrumbs {
     font-size: 0.8rem; }
@@ -278,7 +278,7 @@ header {
   font-weight: bold; }
 
 /* line 207, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
-.main-content .content .title, .main-content .content .section-content, .main-content .content .section-video {
+.main-content .content .title, .main-content .content .section-content, .main-content .content .section-video, .main-content .content .section-chart, .main-content .content .section-quiz {
   width: 700px;
   margin: 0 auto; }
 
@@ -301,10 +301,40 @@ header {
     width: 100%; }
 
 /* line 222, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+.main-content .content .section-chart {
+  height: 20rem;
+  margin: 0 auto;
+  margin-bottom: 2rem; }
+
+/* line 227, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+.main-content .content .section-quiz .sub-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem; }
+
+/* line 230, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+.main-content .content .section-quiz .quiz-title {
+  font-weight: bold;
+  font-size: 1.1rem; }
+
+/* line 233, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+.main-content .content .section-quiz table {
+  margin-top: 1rem; }
+  /* line 235, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+  .main-content .content .section-quiz table td {
+    padding: 0.5rem 0; }
+    /* line 237, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+    .main-content .content .section-quiz table td:last-child {
+      padding-left: 2rem; }
+
+/* line 239, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+.main-content .content .section-quiz .btn {
+  margin-top: 1rem; }
+
+/* line 241, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
 .main-content .content figure {
   position: relative; }
 
-/* line 225, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+/* line 244, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
 .image-caption {
   position: absolute;
   left: -172px;
@@ -321,6 +351,32 @@ header {
   color: rgba(0, 0, 0, 0.6);
   outline: 0;
   z-index: 300; }
+
+/* line 261, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+.content-menu {
+  position: absolute;
+  top: 10rem;
+  left: 1.5%;
+  padding: 0;
+  width: 15rem;
+  font-size: 1rem;
+  list-style: none; }
+  /* line 271, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+  .content-menu li {
+    margin-bottom: 0.5rem; }
+  /* line 273, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+  .content-menu.fixed {
+    position: fixed;
+    top: 4rem; }
+
+/* line 277, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+.anchor {
+  padding-top: 4rem;
+  margin-top: -4rem; }
+
+/* line 283, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/partials/_style.sass */
+.highcharts-container svg > text:last-child {
+  display: none; }
 
 /* line 1, /Users/Trikster/static_sites/OnlineEduMokup/src/sass/vendor/_normalize.sass */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
